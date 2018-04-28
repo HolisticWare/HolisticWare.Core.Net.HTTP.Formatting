@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{A117461F-6AB9-4569-BAD4-D95428BEABB6}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>HolisticWare.Core.Net.HTTP.Formatting</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Core\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Core\Net\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\MediaTypeFormatterAvroApache.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\MediaTypeFormatterTextCSV.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\MediaTypeFormatterJSONSystem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\MediaTypeFormatterJSONP.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\MediaTypeFormatterTextPlain.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\MediaTypeFormatterRouteDataMapping.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\MediaTypeFormatterThriftBinary.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\MediaTypeFormatterThriftJSON.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\MediaTypeFormatterThriftCompact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\MediaTypeFormatterJSONnetNewtonsoft.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\MediaTypeFormatterTextPlainvCard.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\AvroSerializerEx.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Net\HTTP\Formatting\IAvroSerializerEx.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)readme.md" />
+  </ItemGroup>
+</Project>

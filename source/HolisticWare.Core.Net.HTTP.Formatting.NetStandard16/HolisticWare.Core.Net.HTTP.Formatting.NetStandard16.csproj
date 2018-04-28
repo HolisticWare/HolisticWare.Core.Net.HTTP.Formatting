@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Core.Net.HTTP.Formatting</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="..\HolisticWare.Core.Net.HTTP.Formatting\HolisticWare.Core.Net.HTTP.Formatting.projitems" Label="Shared" />
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="10.0.3" />
+    <PackageReference Include="System.Json" Version="4.4.0" />
+    <PackageReference Include="WinInsider.System.Net.Http.Formatting" Version="1.0.5" />
+    <PackageReference Include="Microsoft.Hadoop.Avro" Version="1.5.6" />
+  </ItemGroup>
+
+</Project>
